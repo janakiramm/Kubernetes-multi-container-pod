@@ -42,7 +42,7 @@ export NODE_PORT=<NODE_PORT>
 
 ## Initialize the database with sample schema
 ```
-curl <NODE_IP>:<NODEPORT>/init
+curl http://$NODE_IP:$NODE_PORT/init
 ```
 ## Insert some sample data
 ```
