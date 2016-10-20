@@ -6,6 +6,8 @@ Simple tutorial to demonstrate the concept of packaging multiple containers into
 * Each time data is fetched from MySQL, it gets cached in the Redis container of the same Pod as the Python Flask container
 * When the additional Web Pods are launched manually or through a Replica Set, co-located pairs of Python Flask and Redis containers are scheduled together
 
+![Architecture](https://github.com/janakiramm/Kubernetes-multi-container-pod/blob/master/multi-container-pod.png?raw=true)
+
 Make sure that you have access to a Kubernetes cluster.
 
 ## Build a Docker image from existing Python source code and push it to Docker Hub. Replace DOCKER_HUB_USER with your Docker Hub username.
