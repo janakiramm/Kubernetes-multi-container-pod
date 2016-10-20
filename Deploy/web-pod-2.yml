@@ -1,0 +1,24 @@
+apiVersion: "v1"
+kind: Pod
+metadata:
+  name: web2
+  labels:
+    name: web
+    app: demo
+spec:
+  containers:
+    - name: redis
+      image: redis
+      ports:
+        - containerPort: 6379
+          name: redis
+          protocol: TCP
+    - name: python
+      image: janakiramm/py-red
+      env:       
+        - name: "REDIS_HOST"
+          value: "localhost"
+      ports:
+        - containerPort: 5000
+          name: http
+          protocol: TCP                    
