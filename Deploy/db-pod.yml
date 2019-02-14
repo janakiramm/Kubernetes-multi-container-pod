@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: mysql
-      image: mysql:latest
+      image: mysql:5.7.25
       ports:
         - containerPort: 3306         
           protocol: TCP
